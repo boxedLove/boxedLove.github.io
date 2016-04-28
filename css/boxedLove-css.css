@@ -1,5 +1,5 @@
 .navbar {
-	font-color: black;
+	/* background-color: #e5dade; */
 }
 
 .navbar-brand {
@@ -9,13 +9,46 @@
 	top: 2px; */
 }
 
+span.name {
+    font-family: "Arciform";
+    font-size: 1.3em;
+    color: #e57ba3;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.huge {
+    font-size: 2em;
+}
+
+form {
+    padding: 25px;
+    font-size: 1.3em;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .fill {
 	min-height: 100%;
     height: 100%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 #splash {
-    background-color: black;
+    background-color: white;
     background: url(../img/splashBG.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
