@@ -9,6 +9,12 @@
 	top: 2px; */
 }
 
+footer {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
 span.name {
     font-family: "Arciform";
     font-size: 1.3em;
@@ -21,6 +27,7 @@ h1 {
 
 p {
     font-size: 1.5em;
+    line-height: 30px;
 }
 
 .huge {
@@ -54,4 +61,14 @@ form {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.whiteBG {
+    background-color: white;
+    background: url(../img/whiteBG.png) repeat center center fixed; 
+}
+
+.tanBG {
+    background-color: white;
+    background: url(../img/tanBG.png) repeat center center fixed; 
 }
