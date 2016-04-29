@@ -54,6 +54,11 @@ form {
     padding-right: 150px;
 }
 
+.form-label {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
 #splash {
     background-color: white;
     background: url(../img/splashBG.png) no-repeat center center fixed; 

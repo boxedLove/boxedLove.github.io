@@ -70,76 +70,187 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-0"></div>
-          <div class="col-lg-6 col-md-6 col-sm-12 well">
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12 well">
             <form>
-              <fieldset class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <small class="text-muted">We'll never share your email with anyone else.</small>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="exampleSelect1">Example select</label>
-                <select class="form-control" id="exampleSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="exampleSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="exampleTextarea">Example textarea</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" class="form-control-file" id="exampleInputFile">
-                <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-              </fieldset>
+              <label class="form-label">What is your age?</label><br/>
               <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                  Option one is this and that&mdash;be sure to include why it's great
-                </label>
+                <label><input type="radio" name="ageRadios" value="<18" checked>
+                  Less than 18 years old</label><br/>
+                <label><input type="radio" name="ageRadios" value="18_22">
+                  18-22</label><br/>
+                <label><input type="radio" name="ageRadios" value="23_26">
+                  23-26</label><br/>
+                <label><input type="radio" name="ageRadios" value="27_30">
+                  27-30</label><br/>
+                <label><input type="radio" name="ageRadios" value=">30">
+                  30+</label><br/>
               </div>
+
+              <label class="form-label">What is your gender identification?</label><br/>
               <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  Option two can be something else and selecting it will deselect option one
-                </label>
+                <label><input type="radio" name="genderRadios" value="male" checked>
+                  Male</label><br/>
+                <label><input type="radio" name="genderRadios" value="female">
+                  Female</label><br/>
+                <label><input type="radio" id="otherGenderOption" name="genderRadios" value="other">
+                  <input onfocus="$('#otherGenderOption').prop('checked', true);" type="email" class="form-control" id="genderOther" placeholder="Other"></label><br/>
               </div>
-              <div class="radio disabled">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                  Option three is disabled
-                </label>
+
+              <label class="form-label">How would you best describe your sexual identity?</label><br/>
+              <div class="radio">
+                <label><input type="radio" name="sexualRadios" value="male" checked>
+                  Heterosexual</label><br/>
+                <label><input type="radio" name="sexualRadios" value="female">
+                  Homosexual</label><br/>
+                <label><input type="radio" name="sexualRadios" value="male" checked>
+                  Bisexual</label><br/>
+                <label><input type="radio" name="sexualRadios" value="female">
+                  Asexual</label><br/>
+                <label><input type="radio" id="otherSexualOption" name="sexualRadios" value="other">
+                  <input onfocus="$('#otherSexualOption').prop('checked', true);" type="email" class="form-control" id="sexualOther" placeholder="Other"></label><br/>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Check me out
-                </label>
+
+              <label class="form-label">Which of the following best describes your exercise habits?</label><br/>
+              <div class="radio">
+                <label><input type="radio" name="exerciseRadios" value="<1" checked>
+                  Less than 1 hour/week</label><br/>
+                <label><input type="radio" name="exerciseRadios" value="2_3">
+                  2-3 hours/week</label><br/>
+                <label><input type="radio" name="exerciseRadios" value="4_7">
+                  4-7 hours/week</label><br/>
+                <label><input type="radio" name="exerciseRadios" value="8_14">
+                  8-14 hours/week</label><br/>
+                <label><input type="radio" name="exerciseRadios" value=">14">
+                  14+ hours/week</label><br/>
               </div>
-              <center><button type="submit" class="btn btn-primary">Submit</button></center>
+
+              <label class="form-label">What is the highest academic degree that you have received?</label><br/>
+              <small class="text-muted">If you're currently working towards a degree, select the degree you are currently seeking.</small>
+              <div class="radio">
+                <label><input type="radio" name="degreeRadios" value="grade" checked>
+                  Grade School</label><br/>
+                <label><input type="radio" name="degreeRadios" value="high">
+                  High School</label><br/>
+                <label><input type="radio" name="degreeRadios" value="bachelors">
+                  Bachelor's Degree</label><br/>
+                <label><input type="radio" name="degreeRadios" value="masters">
+                  Master's Degree</label><br/>
+                <label><input type="radio" name="degreeRadios" value="doc">
+                  PhD, MD, JD or equivalent</label><br/>
+              </div>
+
+              <label class="form-label">Which of the following ranges does your annual income fall under?</label><br/>
+              <small class="text-muted">If you are a student, please select 'not applicable'.</small>
+              <div class="radio">
+                <label><input type="radio" name="incomeRadios" value="5" checked>
+                  Under $5,000</label><br/>
+                <label><input type="radio" name="incomeRadios" value="5_25">
+                  $5,000-$25,000</label><br/>
+                <label><input type="radio" name="incomeRadios" value="25_50">
+                  $25,000-$50,000</label><br/>
+                <label><input type="radio" name="incomeRadios" value="50_75">
+                  $50,000-$75,000</label><br/>
+                <label><input type="radio" name="incomeRadios" value="75_100">
+                  $75,000-$100,000</label><br/>
+                <label><input type="radio" name="incomeRadios" value="100_200">
+                  $100,000-$200,000</label><br/>
+                <label><input type="radio" name="incomeRadios" value="200">
+                  $200,000+</label><br/>
+                <label><input type="radio" name="incomeRadios" value="unemployed">
+                  Currently unemployed</label><br/>
+                <label><input type="radio" name="incomeRadios" value="na">
+                  Not applicable</label><br/>
+              </div>
+
+              <label class="form-label">How would you describe your current relationship status?</label><br/>
+              <div class="radio">
+                <label><input type="radio" name="relationshipRatios" value="single">
+                  Single (and looking to date)</label><br/>
+                <label><input type="radio" name="relationshipRatios" value="lessThanYear">
+                  In a relationship of less than 1 year</label><br/>
+                <label><input type="radio" name="relationshipRatios" value="moreThanYear">
+                  In a relationship of more than 1 year</label><br/>
+                <label><input type="radio" name="relationshipRatios" value="engaged">
+                  Engaged</label><br/>
+                <label><input type="radio" name="relationshipRatios" value="married">
+                  Married</label><br/>
+              </div>
+
+              <label class="form-label">How would you describe your relationship history?</label><br/>
+              <small class="text-muted">Please do not count the relationship you are currently in.</small>
+              <div class="radio">
+                <label><input type="radio" name="historyRadios" value="never">
+                  Never had any romantic contact of any sort</label><br/>
+                <label><input type="radio" name="historyRadios" value="notSerious">
+                  Have had romantic partners but never serious relationships</label><br/>
+                <label><input type="radio" name="historyRadios" value="serious">
+                  Have previously been in serious relationships</label><br/>
+                <label><input type="radio" name="historyRadios" value="engaged">
+                  Have previously been engaged</label><br/>
+                <label><input type="radio" name="historyRadios" value="married">
+                  Have previously been married</label><br/>
+              </div>
+
+              <label class="form-label">Which of the following activities sounds most appealing to do on a date with a significant other?</label><br/>
+              <small class="text-muted">Check all that apply.</small>
+              <div class="radio">
+                <label><input type="checkbox">
+                  Dinner and a movie</label><br/>
+                <label><input type="checkbox">
+                  Fitness activity (e.g., hiking, yoga)</label><br/>
+                <label><input type="checkbox">
+                  Romantic bubble bath</label><br/>
+                <label><input type="checkbox">
+                  Concert or festival</label><br/>
+                <label><input type="checkbox">
+                  Cooking at home</label><br/>
+                <label><input type="checkbox">
+                  Theme park (e.g., Six Flags, Disneyland)</label><br/>
+                <label><input type="checkbox">
+                  Adventurous activity (e.g., rock climbing, sky diving)</label><br/>
+                <label><input type="checkbox">
+                  Night in and relax</label><br/>
+              </div>
+
+              <label class="form-label">How would you describe your level of sexual experience?</label><br/>
+              <div class="radio">
+                <label><input type="radio" name="experienceRadios" value="1">
+                  1 - I have never had any sexual encounters</label><br/>
+                <label><input type="radio" name="experienceRadios" value="2">
+                  2</label><br/>
+                <label><input type="radio" name="experienceRadios" value="3">
+                  3 - I have occasional sexual encounters</label><br/>
+                <label><input type="radio" name="experienceRadios" value="4">
+                  4</label><br/>
+                <label><input type="radio" name="experienceRadios" value="5">
+                  5 - I regularly have sexual encounters</label><br/>
+              </div>
+
+              <label class="form-label">How would you describe your willingness to experiment sexually?</label><br/>
+              <div class="radio">
+                <label><input type="radio" name="experimentRadios" value="1">
+                  1 - I only consider conventional intercourse or non-penetrative activities</label><br/>
+                <label><input type="radio" name="experimentRadios" value="2">
+                  2</label><br/>
+                <label><input type="radio" name="experimentRadios" value="3">
+                  3 - I am willing to experiment with toys and light bondage</label><br/>
+                <label><input type="radio" name="experimentRadios" value="4">
+                  4</label><br/>
+                <label><input type="radio" name="experimentRadios" value="5">
+                  5 - I am willing to try anything sexually</label><br/>
+              </div>
+             
+              <center><button style="margin-top: 15px;" type="submit" class="btn btn-primary huge">Submit</button></center>
             </form>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
         </div>
       </div>
     </div>
   </div>
+
+  <footer>
+    © <span class="name">boxedLove</span>
+  </footer>
 </body>
