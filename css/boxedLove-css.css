@@ -59,6 +59,10 @@ form {
     margin-top: 20px;
 }
 
+label.check {
+    margin-bottom: 0px;
+}
+
 #splash {
     background-color: white;
     background: url(../img/splashBG.png) no-repeat center center fixed; 
