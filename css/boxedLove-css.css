@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Arciform';
-    src: url('fonts/Arciform.otf');
+    src: url('../fonts/Arciform.otf');
 }
 
 @font-face {
     font-family: 'Museo Sans';
-    src: url('fonts/MuseoSans.ttf');
+    src: url('../fonts/MuseoSans.ttf');
 }
 
 * {
