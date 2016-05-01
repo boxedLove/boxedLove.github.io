@@ -16,7 +16,7 @@
 	/* background-color: #e5dade; */
 }
 
-.navbar-brand {
+.navbar-brand, .navbar-brand span {
 	font-family: "Arciform";
 	font-size: 2em;
 	/* position: relative;
@@ -29,7 +29,7 @@ footer {
     text-align: center;
 }
 
-span.name {
+span.name, span.name span {
     font-family: "Arciform";
     font-size: 1.3em;
     color: #e57ba3;
