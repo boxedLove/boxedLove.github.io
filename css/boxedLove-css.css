@@ -13,7 +13,8 @@
 }
 
 .navbar {
-	/* background-color: #e5dade; */
+    /*background-color: rgba(248,248,248,0);
+    border-color: rgba(231,231,231,0);*/
 }
 
 .navbar-brand, .navbar-brand span {

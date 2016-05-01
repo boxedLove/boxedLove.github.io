@@ -26,6 +26,13 @@
       href="./img/favicon.png">
 
     <script type="text/javascript">
+      $(document).ready(function() {
+        if ($(this).scrollTop() < 100) {
+          $(".navbar").css({"background-color": "rgba(248,248,248,"+$(this).scrollTop() / 100+")", 
+            "border-color": "rgba(231,231,231,"+$(this).scrollTop() / 100+")"});
+        }
+      });
+
       $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -39,6 +46,16 @@
             }
           }
         });
+      });
+
+      $(document).scroll(function() {
+        if ($(this).scrollTop() < 100) {
+          $(".navbar").css({"background-color": "rgba(248,248,248,"+$(this).scrollTop() / 100+")", 
+            "border-color": "rgba(231,231,231,"+$(this).scrollTop() / 100+")"});
+        } else {
+          $(".navbar").css({"background-color": "rgba(248,248,248,1)",
+            "border-color": "rgba(231,231,231,1)"});
+        }
       });
     </script>
 </head>
