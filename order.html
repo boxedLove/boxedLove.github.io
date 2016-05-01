@@ -259,6 +259,81 @@
                 <label><input type="radio" name="experimentRadios" value="5">
                   5 - I am willing to try anything sexually</label><br/>
               </div>
+
+              <label class="form-label">What degree of passion are you looking for? 😉</label><br/>
+              <div id="childmildwild" class="radio row">
+                <center>
+                  <div id="child" class="col-xs-4"><label><img id="childImg" src="./img/child.png"/><br/><br/><p>Child</p></label></div>
+                  <div id="mild" class="col-xs-4"><label><img id="mildImg" src="./img/mild.png"/><br/><br/><p>Mild</p></label></div>
+                  <div id="wild" class="col-xs-4"><label><img id="wildImg" src="./img/wild.png"/><br/><br/><p>Wild</p></label></div>
+                </center>
+              </div>
+
+              <script>
+                var childEnabled = true, mildEnabled = true, wildEnabled = true;
+                $("#child").click(function() {
+                  childEnabled = true;
+                  mildEnabled = false;
+                  wildEnabled = false;
+                  $("#childImg").attr("src", "./img/childAlt.png");
+                  $("#mildImg").attr("src", "./img/mildDisabled.png");
+                  $("#wildImg").attr("src", "./img/wildDisabled.png");
+                });
+
+                $("#mild").click(function() {
+                  mildEnabled = true;
+                  childEnabled = false;
+                  wildEnabled = false;
+                  $("#mildImg").attr("src", "./img/mildAlt.png");
+                  $("#childImg").attr("src", "./img/childDisabled.png");
+                  $("#wildImg").attr("src", "./img/wildDisabled.png");
+                });
+
+                $("#wild").click(function() {
+                  wildEnabled = true;
+                  childEnabled = false;
+                  mildEnabled = false;
+                  $("#wildImg").attr("src", "./img/wildAlt.png");
+                  $("#childImg").attr("src", "./img/childDisabled.png");
+                  $("#mildImg").attr("src", "./img/mildDisabled.png");
+                });
+
+                $("#child").hover(function() { 
+                  if (childEnabled)
+                    $("#childImg").attr("src", "./img/childAlt.png"); 
+                  else 
+                    $("#childImg").attr("src", "./img/childAltDisabled.png"); 
+                }, function() { 
+                  if (childEnabled)
+                    $("#childImg").attr("src", "./img/child.png"); 
+                  else
+                    $("#childImg").attr("src", "./img/childDisabled.png"); 
+                });
+
+                $("#mild").hover(function() { 
+                  if (mildEnabled)
+                    $("#mildImg").attr("src", "./img/mildAlt.png"); 
+                  else
+                    $("#mildImg").attr("src", "./img/mildAltDisabled.png"); 
+                }, function() { 
+                  if (mildEnabled)
+                    $("#mildImg").attr("src", "./img/mild.png"); 
+                  else
+                    $("#mildImg").attr("src", "./img/mildDisabled.png"); 
+                });
+
+                $("#wild").hover(function() { 
+                  if (wildEnabled)
+                    $("#wildImg").attr("src", "./img/wildAlt.png"); 
+                  else
+                    $("#wildImg").attr("src", "./img/wildAltDisabled.png"); 
+                }, function() { 
+                  if (wildEnabled)
+                    $("#wildImg").attr("src", "./img/wild.png"); 
+                  else
+                    $("#wildImg").attr("src", "./img/wildDisabled.png"); 
+                });
+              </script>
              
               <center><button style="margin-top: 15px;" type="submit" class="btn btn-primary huge">Build my box!</button></center>
             </form>
