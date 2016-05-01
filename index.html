@@ -30,7 +30,7 @@
 
       $(document).ready(function() {
         if ($(this).scrollTop() < opacityRate) {
-          $(".navbar").css({"background-color": "rgba(248,248,248,"+$(this).scrollTop() / opacityRate+")", 
+          $(".navbar").css({"background-color": "rgba(251,251,251,"+$(this).scrollTop() / opacityRate+")", 
             "border-color": "rgba(231,231,231,"+$(this).scrollTop() / opacityRate+")"});
         }
       });
@@ -52,10 +52,10 @@
 
       $(document).scroll(function() {
         if ($(this).scrollTop() < opacityRate) {
-          $(".navbar").css({"background-color": "rgba(248,248,248,"+$(this).scrollTop() / opacityRate+")", 
+          $(".navbar").css({"background-color": "rgba(251,251,251,"+$(this).scrollTop() / opacityRate+")", 
             "border-color": "rgba(231,231,231,"+$(this).scrollTop() / opacityRate+")"});
         } else {
-          $(".navbar").css({"background-color": "rgba(248,248,248,1)",
+          $(".navbar").css({"background-color": "rgba(251,251,251,1)",
             "border-color": "rgba(231,231,231,1)"});
         }
       });
