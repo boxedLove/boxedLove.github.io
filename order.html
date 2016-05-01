@@ -261,11 +261,11 @@
               </div>
 
               <label class="form-label">What degree of passion are you looking for? 😉</label><br/>
-              <div id="childmildwild" class="radio row">
+              <div id="childmildwild" class="row" style="margin-top: 25px;">
                 <center>
-                  <div id="child" class="col-xs-4"><label><img id="childImg" src="./img/child.png"/><br/><br/><p>Child</p></label></div>
-                  <div id="mild" class="col-xs-4"><label><img id="mildImg" src="./img/mild.png"/><br/><br/><p>Mild</p></label></div>
-                  <div id="wild" class="col-xs-4"><label><img id="wildImg" src="./img/wild.png"/><br/><br/><p>Wild</p></label></div>
+                  <div id="child" class="col-xs-4"><label><img id="childImg" src="./img/child.png"/><br/><br/><p id="childText" style="color: black;">Child</p></label></div>
+                  <div id="mild" class="col-xs-4"><label><img id="mildImg" src="./img/mild.png"/><br/><br/><p id="mildText" style="color: black;">Mild</p></label></div>
+                  <div id="wild" class="col-xs-4"><label><img id="wildImg" src="./img/wild.png"/><br/><br/><p id="wildText" style="color: black;">Wild</p></label></div>
                 </center>
               </div>
 
@@ -278,6 +278,9 @@
                   $("#childImg").attr("src", "./img/childAlt.png");
                   $("#mildImg").attr("src", "./img/mildDisabled.png");
                   $("#wildImg").attr("src", "./img/wildDisabled.png");
+                  $("#childText").css("color", "black");
+                  $("#mildText").css("color", "gray");
+                  $("#wildText").css("color", "gray");
                 });
 
                 $("#mild").click(function() {
@@ -287,6 +290,9 @@
                   $("#mildImg").attr("src", "./img/mildAlt.png");
                   $("#childImg").attr("src", "./img/childDisabled.png");
                   $("#wildImg").attr("src", "./img/wildDisabled.png");
+                  $("#mildText").css("color", "black");
+                  $("#childText").css("color", "gray");
+                  $("#wildText").css("color", "gray");
                 });
 
                 $("#wild").click(function() {
@@ -296,6 +302,9 @@
                   $("#wildImg").attr("src", "./img/wildAlt.png");
                   $("#childImg").attr("src", "./img/childDisabled.png");
                   $("#mildImg").attr("src", "./img/mildDisabled.png");
+                  $("#wildText").css("color", "black");
+                  $("#mildText").css("color", "gray");
+                  $("#childText").css("color", "gray");
                 });
 
                 $("#child").hover(function() { 
@@ -334,9 +343,9 @@
                     $("#wildImg").attr("src", "./img/wildDisabled.png"); 
                 });
               </script>
-             
-              <center><button style="margin-top: 15px;" type="submit" class="btn btn-primary huge">Build my box!</button></center>
             </form>
+
+            <center><a href="payment.html"><button class="btn btn-primary gigantic">Build my box!</button></a></center>
           </div>
           <div class="col-lg-2 col-md-1 col-sm-0"></div>
         </div>
