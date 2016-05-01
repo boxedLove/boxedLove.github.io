@@ -108,27 +108,60 @@
           </div>
         </div>
 
-        <div style="padding-top: 35px; padding-bottom: 35px; margin-left: 20px; margin-right: 20px;" class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div id="child" class="well" style="text-align: center;">
+        <div style="padding-top: 35px; margin-left: 20px; margin-right: 20px;" class="row">
+          <a href="javascript:void(0);" id="child"><div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="well" style="text-align: center;">
               <img id="childImg" src="./img/child.png"/><br/>
-              <h2>Child</h2>
+              <h2 style="color: black;">Child</h2>
             </div>
-          </div>
+          </div></a>
 
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div id="mild" class="well" style="text-align: center;">
+          <a href="javascript:void(0);" id="mild"><div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="well" style="text-align: center;">
               <img id="mildImg" src="./img/mild.png"/><br/>
-              <h2>Mild</h2>
+              <h2 style="color: black;">Mild</h2>
             </div>
-          </div>
+          </div></a>
 
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div id="wild" class="well" style="text-align: center;">
+          <a href="javascript:void(0);" id="wild"><div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="well" style="text-align: center;">
               <img id="wildImg" src="./img/wild.png"/><br/>
-              <h2>Wild</h2>
+              <h2 style="color: black;">Wild</h2>
             </div>
+          </div></a>
+        </div>
+
+        <div id="childDesc" class="row" style="display: none;">
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <center>
+              <h2>Child</h2>
+              <p>Want to starting experimenting but without making a child? Lol what a funny joke!</p>
+            </center>
           </div>
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
+        </div>
+
+        <div id="mildDesc" class="row" style="display: none;">
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <center>
+              <h2>Mild</h2>
+              <p>Need something a little more daring?</p>
+            </center>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
+        </div>
+
+        <div id="wildDesc" class="row" style="display: none;">
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <center>
+              <h2>Wild</h2>
+              <p>Ready to let loose?</p>
+            </center>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-0"></div>
         </div>
 
         <script>
@@ -149,16 +182,34 @@
           }, function() { 
             $("#wildImg").attr("src", "./img/wild.png");  
           });
+
+          $("#child").click(function() { 
+            $("#childDesc").slideDown();
+            $("#mildDesc").slideUp();
+            $("#wildDesc").slideUp();
+          });
+
+          $("#mild").click(function() { 
+            $("#mildDesc").slideDown();
+            $("#childDesc").slideUp();
+            $("#wildDesc").slideUp();
+          });
+
+          $("#wild").click(function() { 
+            $("#wildDesc").slideDown();
+            $("#childDesc").slideUp();
+            $("#mildDesc").slideUp();
+          });
         </script>
 
-        <div class="row">
+        <div class="row" style="padding-top: 35px;">
           <div class="col-lg-6 col-md-6 col-sm-8">
             <h2>Meet the Team</h2>
             <p><span class="name">boxed<span style="font-size: 1.08em;">L</span>ove</span> was created by four Princeton University undergraduates in 2016. We're all really cool and you should like us a lot!</p>
           </div>
         </div>
 
-        <div style="padding-top: 35px; margin-left: 20px; margin-right: 20px;" class="row">
+        <!--<div style="padding-top: 35px; margin-left: 20px; margin-right: 20px;" class="row">
           <div class="col-lg-3 col-md-3 col-sm-4">
             <div class="well" style="text-align: center; height:270px;">
               <img src="./img/kevin.png" style="max-width:100%;"/><br/>
@@ -181,6 +232,33 @@
             <div class="well" style="text-align: center; height:270px;">
               <img src="./img/aqeel.png"  style="max-width:100%;"/><br/>
               <h3  style="padding-top: 10px;">Aqeel Phillips</h3>
+            </div>
+          </div>
+        </div>-->
+
+        <div style="padding-top: 35px; margin-left: 20px; margin-right: 20px;" class="row">
+          <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="well" style="text-align: center;">
+              <img src="./img/kevin.png" style="max-width:100%;"/><br/>
+              <h3>Kevin</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="well" style="text-align: center;">
+              <img src="./img/julie.png" style="max-width:100%;"/><br/>
+              <h3>Julie</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="well" style="text-align: center;">
+              <img src="./img/amanda.png"  style="max-width:100%;"/><br/>
+              <h3>Amanda</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="well" style="text-align: center;">
+              <img src="./img/aqeel.png"  style="max-width:100%;"/><br/>
+              <h3>Aqeel</h3>
             </div>
           </div>
         </div>
