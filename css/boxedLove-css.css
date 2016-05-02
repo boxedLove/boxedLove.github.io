@@ -59,6 +59,11 @@ form {
     font-size: 1.3em;
 }
 
+img.company {
+    width: 100%;
+    padding: 15px;
+}
+
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
