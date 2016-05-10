@@ -15,7 +15,7 @@ Main page for customers; all information and marketing is designed to be here. C
 * Example Boxes - a couple examples of what might come in a box and the people associated with them.
 * Contact - obligatory contact link to our company mailing address.
 
-## order.html
+### order.html
 
 An emulation of the form that a customer would fill out to order their box. We ask demographic questions as well as gauging their comfort/experience levels. This is the screen that a new customer would be brought to. An existing customer would not need to fill this out for every box received, but could update their responses.
 
