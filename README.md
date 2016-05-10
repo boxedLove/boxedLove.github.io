@@ -6,7 +6,7 @@ Main page for customers; all information and marketing is designed to be here. C
 * Splash page - simply our logo
 * Who We Are - explanation of the service, and exposing customers to our unique branding (child, mild, wild).
 * Meet the Team - short bios of our team members to personify the company/service.
-* Partners - a few recognizable products that we stock.
+* Products Stocked - a few recognizable products that we stock.
 * Shop - short description of our pricing model (seasonality) and link to ordering.
 * Example Boxes - a couple examples of what might come in a box and the people associated with them.
 * Contact - obligatory contact link to our company mailing address.
